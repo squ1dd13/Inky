@@ -1,0 +1,9 @@
+Package: com.squ1dd13.inky
+Name: Inky
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome library of some sort!!
+Maintainer: Squ1dd13
+Author: Squ1dd13
+Section: System
+Tag: role::developer
