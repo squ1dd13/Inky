@@ -19,7 +19,7 @@ A beautiful, simple colour picker designed for iOS 11 and 12. (Tested on iOS 9, 
 
 ### Using Inky in a preference bundle
 1. Add an `SQColorPickerCell` entry to your preference bundle:
-```plist
+```xml
 <dict>
   <key>cell</key>
   <string>PSButtonCell</string>
