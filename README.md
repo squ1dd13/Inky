@@ -71,12 +71,12 @@ Something like this:
 ```objc
 inline UIColor *colorFromDefaults(NSString *key, NSString *domain, UIColor *defaultColor) {
   NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:domain];
-  NSString *colorString = [defaults objectForKey:key];
+  NSNumber *colorValue = [defaults objectForKey:key];
   
   //If the colour wasn't found, return the default colour.
-  if(!colorString) return defaultColor;
+  if(!colorValue) return defaultColor;
   
-  const unsigned colorInt = [colorString unsignedIntValue];
+  const unsigned colorInt = [colorValue intValue];
   
   //Get the different colour components.
   const unsigned r = colorInt >> 24 & 0xFF,
